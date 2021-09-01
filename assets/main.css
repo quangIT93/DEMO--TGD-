@@ -1,0 +1,366 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.sale__laptop {
+    height: 3em;
+    width: 1200px;
+    margin: auto;
+}
+
+.header__logo {
+    padding-right: 15px;
+}
+
+.icon-logo {
+    background-image: url(//cdn.tgdd.vn/mwgcart/mwg-site/ContentMwg/images/TGDD/Desktop/icon_common@2x.png?v=1);
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    vertical-align: middle;
+    background-size:20em 17em;
+}
+
+.header__logo a {
+    text-decoration: none;
+    transition: .2s;
+    color: #288ad6;
+}
+
+.icon-logo {
+    background-position: 0 0;
+    height: 2.1em;
+    width: 10em;
+}
+
+/* HEADER */
+
+.header {
+    height: 3em;
+    background-color: #000;
+}
+
+.container__header {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+
+}
+
+.header__nav {
+    padding: 0 0.3em;
+}
+
+.header__nav a {
+    color: #fff;    
+    text-decoration: none;
+    font-size: 1em;
+    line-height: 3em;
+}
+
+.header__checking {
+
+}
+
+.header__checking a {
+    display: block;
+    line-height: 3em;
+    font-size: 0.7em;
+}
+
+.header__checking a span {
+    display: block;
+    line-height: 2px;
+    color: yellow;
+}
+
+/* header__bags */
+
+.header__bags {
+    border: 1px solid #ccc;
+    margin: 5px 5px; 
+    border-radius: 4px;
+}
+
+.header__bags a {
+    display: block;
+    font-size: 1em;  
+    padding: 0px 1em;
+    width: 100%;
+    line-height: 2.2em;
+    color: #fff;    
+    text-decoration: none;
+    font-size: 1em;
+    /* line-height: 3em; */
+}
+
+.header__bags:hover a {
+    /* border: 1px solid #ccc; */
+    background-color: red;
+    color: #fff;
+}
+
+
+.header__bags a span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header__input {
+    line-height: 3em;
+    /* width: 15%; */
+    /* position: relative; */
+}
+
+.header__input input {
+    border: none;
+    font-size: 1em;
+    height: 1.5em;
+    padding: 8px 35px 8px 13px;
+    border-radius: 4px;
+    display: inline-block;
+    outline: none;
+}
+
+.header__history a {
+ 
+}
+
+/* header-right */
+.header__right {
+    /* margin-right: 1em; */
+    display: flex;
+}
+
+
+.header__right .header__nav {
+    border-left: 1px solid #ccc;
+    padding: 0 0.5em;
+}
+
+.header__technology {
+    
+}
+
+.header__answer {
+
+}
+
+.header__app {
+
+}
+
+/* end header */
+
+/* start navi */
+
+.container__navi {
+    height: 2.5em;
+    background-color: yellow;
+    
+}
+
+.navi {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navi .navi__product {
+    line-height: 2.5em;
+    display: block;
+    padding: 0 0.5em;
+}
+
+.navi .navi__product a {
+    
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+/* end navi */
+
+/* start slider */
+
+.slider {
+    padding-top: 2em;
+}
+
+.slider .img__slider-avt  {
+    height: 19em;
+}
+
+.slider .img__slider {
+    width: 100%;
+}
+
+/* end slider */
+
+/* start banner */
+
+.banner {
+    border-radius: 4px;
+}
+
+.banner a {
+    margin-top: 1em;
+    margin-bottom: 1em; 
+    display: block;
+    /* line-height: 3em; */
+}
+
+.banner a .img__banner {
+    width: 100%;
+}
+
+/* end banner */
+
+/* start content */
+
+.content__sale {
+    background-color: yellow;
+    padding-bottom: 1em;
+    margin: 0%;
+}
+
+
+.img__content {
+    width: 100%;
+}
+.content__header {
+    padding: 0.5em ;
+}
+
+.content__sale-product {
+
+}
+
+.content__sale-info {
+    background-color: #fff;
+    color: #000;
+    padding: 1em;
+}
+
+/* end content-sale */
+
+/* start content-phone */
+
+.content__accessory .row,
+.content__lap .row,
+.content__phone .row{
+    margin: 0;
+    /* background-color: yellow; */
+}
+
+.content__accessory-header,
+.content__lap-header,
+.content__phone-header {
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
+    margin: 1em;
+}
+
+.content__header-accessory,
+.content__header-lap,
+.content__header-phone {
+    line-height: 1.5em;
+}
+
+.content__header-int1,
+.content__header-int2,
+.content__header-int3 {
+    display: flex;
+    /* line-height: 1.5em ; */
+
+
+}
+
+.content__header-int1 a,
+.content__header-int2 a,
+.content__header-int3 a {
+    border: 1px solid;
+    font-size: 1em;
+    line-height: 2em;
+    border-radius: 1em;
+    background-color: #ccc;
+    display: block;
+    margin: 0.5em 0.2em;
+    padding: 0px 1em;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+.img__content-accessory,
+.img__content-lap,
+.img__content-phone {
+    width: 100%;
+}
+
+
+.content__accessorys,
+.content__laps,
+.content__phones {
+    padding-top: 2em;
+    border: 1px solid #ccc;
+}
+
+
+.content__accessory-info,
+.content__lap-info,
+.content__phone-info {
+    background-color: #fff;
+    color: #000;
+    padding: 1em;
+}
+
+/* end content */
+
+/* start footer */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em 0;
+    background-color: #ccc;
+}
+
+.footer__item {
+
+}
+
+.footer__item ul{
+    list-style: none;
+    /* display: block; */
+    
+}
+
+.footer__item ul li{
+    padding: 0.5em 0;
+    
+}
+
+.footer__item ul li a{
+    color: #000;
+    text-decoration: none;
+}
+
+.footer__item p{
+    padding: 0.5em 0;
+    
+    
+}
+
+
+
