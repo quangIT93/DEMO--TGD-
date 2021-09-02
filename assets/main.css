@@ -333,6 +333,7 @@
     justify-content: space-between;
     height: 3em;
     margin: 1em;
+    width: 100%;
 }
 
 .content__header-accessory,
@@ -345,7 +346,7 @@
 .content__header-int2,
 .content__header-int3 {
     display: flex;
-    /* line-height: 1.5em ; */
+    font-size: 1em;
     
     
 }
@@ -487,24 +488,38 @@
     }
 
     /* end header */
-
-
-
+    
+    
+    
     /* start navi */
     .container__navi {
         display: none;
     }
 
     /* end navi */
-
+    
     .nav__input:checked ~ .sub__nav {
         display: block;   
     }
-
-    .sub__nav {
-
+    
+    .content__phone {
+        /* display: none; */
     }
 
+
+    .content__accessory-header,
+    .content__lap-header,
+    .content__phone-header {
+        font-size: 0.8em;
+        width: 100%;
+    }
+
+    .content__header-int1,
+    .content__header-int2,
+    .content__header-int3 {
+        display: none;
+    }
+    
     /*  */
     /* footer */
     .footer__item {
@@ -521,7 +536,7 @@
         width: auto;
         height: auto;
     }
-
+    
     .sale__laptop a img {
         width: 100%;
     }
@@ -555,6 +570,19 @@
 
     .nav__input:checked ~ .sub__nav {
         display: block;   
+    }
+
+    .content__accessory-header,
+    .content__lap-header,
+    .content__phone-header {
+        font-size: 0.8em;
+        width: 100%;
+    }
+
+    .content__header-int1,
+    .content__header-int2,
+    .content__header-int3 {
+        display: none;
     }
 
     /* footer */
@@ -601,6 +629,18 @@
         line-height: 3em;
     }
 
+    .content__accessory-header,
+    .content__lap-header,
+    .content__phone-header {
+        font-size: 0.8em;
+        width: 100%;
+    }
+
+    .content__header-int1,
+    .content__header-int2,
+    .content__header-int3 {
+        display: flex;
+    }
     
 }
 
@@ -623,6 +663,26 @@
     /*  */
     .container__navi {
         display: none;
+    }
+    .content__accessory-header,
+    .content__lap-header,
+    .content__phone-header {
+        font-size: 0.8em;
+        width: 100%;
+    }
+
+    .content__header-int1,
+    .content__header-int2,
+    .content__header-int3 {
+        display: none;
+    }
+    .content__header-int1 a,
+    .content__header-int2 a,
+    .content__header-int3 a {
+        /* font-size: 0.6em;
+        line-height: 3.5em; */
+        /* padding: 0 2em; */
+        
     }
 }
 
