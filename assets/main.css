@@ -94,7 +94,7 @@
 .header__bags a {
     display: block;
     font-size: 1em;  
-    padding: 0px 1em;
+    padding: 0px 1rem;
     width: 100%;
     line-height: 2.2em;
     color: #fff;    
@@ -135,10 +135,20 @@
  
 }
 
+.bars .icon__bars {
+    height: 3em;
+    width: 3em;
+    display: block;
+    line-height: 4.7em;
+    color: #fff;
+    line-height: 3em;
+    padding: 0.3em;
+}
+
 /* header-right */
 .header__right {
-    /* margin-right: 1em; */
     display: flex;
+    /* margin-right: 1em; */
 }
 
 
@@ -190,6 +200,59 @@
 }
 
 /* end navi */
+
+/* start sub nav */
+.close {
+
+}
+
+.close .icon__close {
+    width: 2em;
+    height: 2em;
+    position: absolute;
+    color: #000;
+    top: 1em;
+    left: 1em;
+}
+
+.sub__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    text-align: center;
+    display: none;
+    height: 34.3em;
+}
+
+.sub__nav h3 {
+    color: red;
+}
+
+.sub__nav ul {
+    list-style: none;
+    border-bottom: 1px solid #fff;
+    padding: 1em;
+    
+}
+
+.sub__nav ul li {
+    display: none;
+    
+}
+
+.sub__nav ul li a {
+    font-size: 1em;
+    line-height: 3em;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+    /* border-top: 1px solid #288ad6; */
+
+}
 
 /* start slider */
 
@@ -243,7 +306,7 @@
 }
 
 .content__sale-product {
-
+    
 }
 
 .content__sale-info {
@@ -283,8 +346,8 @@
 .content__header-int3 {
     display: flex;
     /* line-height: 1.5em ; */
-
-
+    
+    
 }
 
 .content__header-int1 a,
@@ -327,27 +390,31 @@
 
 /* end content */
 
+/* start container__navi */
+.container__navi {
+    display: none;
+}
+/* end container__navi */
+
 /* start footer */
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 2em 0;
     background-color: #ccc;
 }
 
 .footer__item {
-
+    margin-right: -4px;
+    padding: 1em 2em;
+    border-right: 1px solid #fff;
+    
 }
 
 .footer__item ul{
     list-style: none;
-    /* display: block; */
-    
 }
 
 .footer__item ul li{
-    padding: 0.5em 0;
+    padding-bottom: 1em;
     
 }
 
@@ -357,10 +424,244 @@
 }
 
 .footer__item p{
-    padding: 0.5em 0;
+    padding-bottom: 1em;
     
     
 }
 
+/* responsive */
 
+/* moile */
+@media (max-width: 739px) { 
+    /* start sale-laptop  */
+    .sale__laptop {
+        width: auto;
+        height: auto;
+    }
+
+    .sale__laptop a img {
+        width: 100%;
+    }
+    /* end sale-laptop */
+
+
+    /* header */
+    .header {
+        height: 6em;
+        width: 100%;
+    }
+    
+    .header__left {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .header .container__header {
+        width: 100%;
+        margin: 0 auto; 
+    }
+
+    .header .container__header .header__left{
+        display: flex;
+        flex-wrap: wrap;
+        /* line-height: 5em; */
+        width: 100%;
+    }
+
+    .header .container__header .header__left .header__input input {
+        padding: 0;
+    }
+
+    .header .container__header .header__left .header__checking {
+        display: none;
+    }
+
+    .header .container__header .header__left .header__bags {
+        display: inline-block;
+        
+    }
+
+
+    .header__right {
+        display: none;
+    }
+
+    /* end header */
+
+
+
+    /* start navi */
+    .container__navi {
+        display: none;
+    }
+
+    /* end navi */
+
+    .nav__input:checked ~ .sub__nav {
+        display: block;   
+    }
+
+    .sub__nav {
+
+    }
+
+    /*  */
+    /* footer */
+    .footer__item {
+        border-bottom: 1px solid #fff;
+        padding: 2em 0;
+        margin-right: 0;
+        text-align: center;
+    }
+}
+
+/* >= Tablet */
+@media (min-width: 740px) { 
+    .sale__laptop {
+        width: auto;
+        height: auto;
+    }
+
+    .sale__laptop a img {
+        width: 100%;
+    }
+
+    .header {
+        height: 3em;
+        width: 100%;
+    }
+
+
+    .header .container__header {
+        width: 100%;
+        margin: 0 auto; 
+    }
+
+    .header .header__nav {
+        /* padding-right: 2em; */
+    }
+
+    .header .container__header .header__left .header__checking {
+        display: none;
+    }
+
+    .header__right {
+        display: none;
+    }
+    /*  */
+    .container__navi {
+        display: none;
+    }
+
+    .nav__input:checked ~ .sub__nav {
+        display: block;   
+    }
+
+    /* footer */
+    .footer__item {
+        border-bottom: 1px solid #fff;
+        padding: 2em 0;
+        margin-right: -2px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1112px) {
+    .container__navi {
+        display: none;
+    }
+
+}
+
+/* PC medium resolution > */
+@media (min-width: 1113px) { 
+    .sale__laptop {
+        width: auto;
+        height: auto;
+    }
+
+    .sale__laptop a img {
+        width: 100%;
+    }
+
+
+    .bars {
+        display: none;
+    }
+    /*  */
+    .container__navi {
+        display: block;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .header__right {
+        display: flex;
+        font-size: 1em;
+        line-height: 3em;
+    }
+
+    
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) { 
+    .sale__laptop {
+        width: auto;
+        height: auto;
+    }
+
+    .sale__laptop a img {
+        width: 100%;
+    }
+
+    .header__left {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    /*  */
+    .container__navi {
+        display: none;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) { 
+    .container__navi {
+        display: block;
+    }
+
+    .header__right {
+        display: flex;
+        font-size: 1em;
+        line-height: 3em;
+    }
+
+    .bars {
+        display: none;
+    }
+
+    .container__navi {
+        display: block;
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .container__navi .navi {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+        
 
